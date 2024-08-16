@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>JavaScript TODO Project</h1>
+    <div>
+      <input id="todoInput" type="text" placeholder="enter todo" />
+      <button onclick="addTask()">Submit</button>
+    </div>
+    <div>
+      <label for="search">Search</label>
+      <input
+        id="search"
+        type="text"
+        placeholder="search ToDo"
+        oninput="filterTodo()"
+      />
+    </div>
+    <ul id="todoList">
+      <li>Test</li>
+    </ul>
+    <div>
+      <p>Total Task : <span id="totalTasks">0</span></p>
+      <p>Completed Task : <span id="completedTasks">0</span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
